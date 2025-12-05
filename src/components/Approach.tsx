@@ -3,6 +3,9 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import app1 from "@/assets/app1.jpg";
+import app2 from "@/assets/app2.jpg";
+import app3 from "@/assets/app3.jpg";
 
 interface Testimonial {
   quote: string;
@@ -13,21 +16,21 @@ interface Testimonial {
 
 const testimonialsData: Testimonial[] = [
   {
-    src: "/src/assets/app1.jpg",
+    src: app1,
     name: "",
     designation: "EV Industry",
     quote:
       "Our charger hardware, firmware, and AI-powered software work together in perfect harmony, delivering unmatched performance, optimized efficiency, and unparalleled reliability to our clients.",
   },
   {
-    src: "/src/assets/app2.jpg",
+    src: app2,
     name: "",
     designation: "Energy Solutions",
     quote:
       "And, with our technology-driven products, services, and solutions, we offer clients great flexibility depending on need and context.",
   },
   {
-    src: "/src/assets/app3.jpg",
+    src: app3,
     name: "",
     designation: "Automotive",
     quote:
